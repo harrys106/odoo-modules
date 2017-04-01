@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+	<data>
+		<template id="assets_common" name="tab_name_width assets" inherit_id="web.assets_common">
+			<xpath expr="." position="inside">
+			<script type="text/javascript" src="/colorz/static/src/js/chrome1.js"></script>
+			</xpath>
+		</template>
+
+		<template id="assets_backend" name="cnew_color_view_width assets" inherit_id="web.assets_backend">
+			
+			<xpath expr="." position="inside">
+				<link rel="stylesheet" href="/colorz/static/src/css/form_view.css"/>
+			</xpath>
+		</template>
+
+		<!-- <template id="layoutz" name="cnew_colorzz_favicon assets" inherit_id="web.layout">
+    		<xpath expr="//link[@rel='shortcut icon']" position="replace">
+            		<link rel="shortcut icon" href="/web/static/src/img/favicon.ico" type="image/x-icon"/>
+            </xpath>
+		</template>
+ -->
+		<!-- <template id="powered_footer" name="powered_by" inherit_id="web.menu_secondary">
+			<xpath expr="//div[@class='oe_footer']" position="replace">
+        	<div class="oe_footer">
+                Powered by <a href="http://www.sirocotech.com" target="_blank"><span>SONIC MEDIA</span></a>
+            </div>
+    		</xpath>
+			
+		</template>
+ -->
+		<!-- <template id="sonic_db_delect" inherit_id="web.login_layout" name="Login Layout for sonic">
+			<xpath expr="//div[@class='oe_single_form_footer']" position="replace">
+				<div class="oe_single_form_footer" t-if="not disable_footer">
+					<t t-if="not disable_database_manager">
+                            <a class="oe_login_manage_db" t-attf-href="/web/database/manager{{ '?debug' if debug else '' }}">Manage Databases</a>
+                            <span class="oe_footer_seperator"> | </span>
+                        </t>
+                        <a href="https://www.sirocotech.com" target="_blank">Powered by <span>Sonic MEDIA</span></a>
+                 </div>
+			</xpath>
+		</template> -->
+	</data>
+</openerp>
