@@ -2,10 +2,10 @@
     "name": "Color'IT",
     "version": "0.1",
     "depends": ["base","web",],
-    "author": "harrys",
-    "category": "Colorzz",
+    "author": "Fourmal Tech",
+    "category": "web",
     "description": """
-    This odoo (openERP 8) module provide : changes in color done TALAL.
+    This odoo (openERP 8) module provide : changes in backend colors.
     
     """,
     "init_xml": [],
@@ -14,5 +14,7 @@
     'demo_xml': [],
     'installable': True,
     'active': False,
+    "price": 10,
+    "currency": "EUR",
 #    'certificate': 'certificate',
 }
